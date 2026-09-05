@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jersey Shop BD - football jerseys in Bangladesh" />
+  <title>Jersey Shop BD | Football Jerseys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="#home"><span>⚽</span> Jersey Shop BD</a>
+    <button class="menu-button" aria-label="Open menu">☰</button>
+    <nav><a href="#home">হোম</a><a href="#products">জার্সি</a><a href="#how-to-order">অর্ডার</a></nav>
+    <button class="cart-button" id="cartButton">কার্ট <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="tag">NEW SEASON • 2026</p>
+        <h1>তোমার প্রিয় দলের<br /><em>জার্সি</em> এখন হাতের কাছে।</h1>
+        <p>Original look, comfortable fabric, সারা বাংলাদেশে home delivery.</p>
+        <a class="primary-button" href="#products">জার্সি দেখো <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="big-jersey"><b>10</b><small>YOUR TEAM</small></div><div class="ball">⚽</div></div>
+    </section>
+
+    <section class="benefits">
+      <div><span>🚚</span><p><b>সারা দেশে ডেলিভারি</b><br />দ্রুত ও নিরাপদে</p></div>
+      <div><span>💳</span><p><b>সহজ পেমেন্ট</b><br />bKash, Nagad অথবা COD</p></div>
+      <div><span>↩️</span><p><b>Size সমস্যা?</b><br />সহজে পরিবর্তনের সুবিধা</p></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <p class="tag">SHOP NOW</p><h2>জনপ্রিয় জার্সি</h2>
+      <div class="filters"><button class="filter active" data-filter="all">সবগুলো</button><button class="filter" data-filter="club">Club</button><button class="filter" data-filter="national">National Team</button></div>
+      <div class="products" id="productsList"></div>
+    </section>
+
+    <section class="order-info" id="how-to-order">
+      <p class="tag">EASY ORDER</p><h2>কীভাবে অর্ডার করবে?</h2>
+      <div class="steps"><div><b>1</b><h3>জার্সি বেছে নাও</h3><p>পছন্দের jersey এবং size কার্টে যোগ করো।</p></div><div><b>2</b><h3>তথ্য দাও</h3><p>নাম, ফোন নম্বর ও delivery address দাও।</p></div><div><b>3</b><h3>পেমেন্ট বেছে নাও</h3><p>bKash, Nagad অথবা Cash on Delivery।</p></div></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span>⚽</span> Jersey Shop BD</a><p>© <span id="year"></span> Jersey Shop BD. All rights reserved.</p><p>যোগাযোগ: 01XXXXXXXXX</p></footer>
+
+  <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart"><div class="cart-top"><h2>তোমার কার্ট</h2><button class="close" id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-total"><span>মোট</span><b id="total">৳0</b></div><button class="primary-button checkout" id="checkoutButton">অর্ডার করতে যাও →</button></aside><div class="overlay" id="overlay"></div>
+
+  <dialog id="checkoutDialog"><button class="close dialog-close">×</button><p class="tag">CHECKOUT</p><h2>অর্ডারের তথ্য</h2><form id="orderForm"><label>তোমার নাম<input required id="customerName" placeholder="পুরো নাম" /></label><label>মোবাইল নম্বর<input required id="customerPhone" type="tel" placeholder="01XXXXXXXXX" /></label><label>ঠিকানা<textarea required id="customerAddress" placeholder="বাসা, এলাকা, জেলা"></textarea></label><fieldset><legend>Payment method</legend><label><input type="radio" name="payment" value="Cash on Delivery" checked /> Cash on Delivery</label><label><input type="radio" name="payment" value="bKash" /> bKash</label><label><input type="radio" name="payment" value="Nagad" /> Nagad</label></fieldset><button class="primary-button" type="submit">WhatsApp-এ অর্ডার পাঠাও</button></form></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
