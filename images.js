@@ -1,10 +1,11 @@
 // Product photos uploaded to the same GitHub repository.
 const productPhotos = {
   'Argentina Home Jersey': 'arg.jpg',
+  'Real Madrid Home Jersey': 'real madrid.jpg',
   'Barcelona Home Jersey': 'barca.jpg',
   'Brazil Home Jersey': 'brazil.jpg',
   'Portugal Home Jersey': 'portugal.jpg',
-  'Manchester City Jersey': 'images (2)city.jpg',
+  'Manchester City Jersey': 'city.jpg',
   'France Home Jersey': 'france.jpg',
   'Liverpool Home Jersey': 'liverpool.jpg'
 };
